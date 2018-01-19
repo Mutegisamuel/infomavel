@@ -8,9 +8,8 @@
     android:background="#333">
     <android.support.design.widget.AppBarLayout
         android:id="@+id/appbar"
-        android:layout_height="200dp"
-        android:layout_width="match_parent"
-        >
+        android:layout_height="300dp"
+        android:layout_width="match_parent">
         <android.support.design.widget.CollapsingToolbarLayout
             android:id="@+id/colappsingtoolbar"
             android:layout_height="match_parent"
@@ -21,6 +20,17 @@
             app:expandedTitleMarginStart="48dp"
             app:expandedTitleMarginEnd="64dp"
             android:background="@drawable/col">
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/toolbarid"
+                app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"/>
+
+
+
+
+
+            
 
         </android.support.design.widget.CollapsingToolbarLayout>
 

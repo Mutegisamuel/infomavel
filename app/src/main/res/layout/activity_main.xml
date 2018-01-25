@@ -15,11 +15,12 @@
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
         android:layout_centerVertical="true"
-        android:text="infomavel"
+        android:text="InfoMAvel"
         android:textAlignment="center"
         android:textColor="@android:color/white"
         android:textSize="60dp"
-        android:visibility="visible" />
+        android:visibility="visible"
+        android:id="@+id/appNameTextView"/>
 
 </RelativeLayout>
 

@@ -69,8 +69,8 @@ android:background="#ffffff">
             <ImageView
                 android:id="@+id/ironman"
                 android:layout_width="190dp"
-                android:layout_height="100dp"
-                android:src="@drawable/Wallpaper"/>
+                android:layout_height="100sp"
+                android:src="@drawable/ic_mev"/>
 
             <TextView
 
@@ -80,7 +80,6 @@ android:background="#ffffff">
                 android:layout_gravity="right"
                 android:text="@string/app_name"
                 android:textStyle="bold"
-                android:letterSpacing="100sp"
                 android:textSize="30sp"/>
 
         </android.support.v7.widget.CardView>

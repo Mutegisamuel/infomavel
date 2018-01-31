@@ -18,11 +18,10 @@ public class CharactersModel {
     public String getName(){
         return  mName;
     }
-    public String getmDescription(){
+    public String getDescription(){
         return mDescription;
     }
-    public String getmImage(){
-        return getmImage();
+    public String getmImage(){return getmImage();
     }
 
 }

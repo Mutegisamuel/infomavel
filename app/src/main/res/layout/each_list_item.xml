@@ -1,38 +1,51 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout
+<LinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:orientation="horizontal">
+
+    <android.support.v7.widget.CardView
+        android:paddingTop="20sp"
+        android:paddingBottom="20sp"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/cardView1">
-        <ImageView
-            android:src="@drawable/ic_mev"
-            android:id="@+id/thubnail"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="200dp" />
-    <TextView
-        android:textSize="20dp"
-        android:textStyle="bold"
-        android:id="@+id/tittle"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_alignParentEnd="true"
-        android:layout_below="@+id/thubnail"
-        tools:text="OUR HERO"/>
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="@dimen/cardview_compat_inset_shadow"
+            android:showDividers="middle">
+
+            <ImageView
+                android:id="@+id/thumbnail"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:src="@drawable/placeholder"
+                />
+
+            <TextView
+                android:id="@+id/tittle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="25dp"
+                android:textStyle="bold"
+                tools:hint="OUR HERO" />
+
+            <TextView
+                android:textStyle="bold"
+                android:id="@+id/description"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:hint="Too busy saving the world to add a description about myself...
+ DEAL WITH IT." />
 
 
-    <TextView
-        android:id="@+id/description"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_alignParentStart="true"
-        android:layout_below="@id/tittle"
-        android:paddingTop="10dp"
-        tools:text="
-Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus." />
+        </LinearLayout>
 
-</RelativeLayout>
+    </android.support.v7.widget.CardView>
+
+</LinearLayout>
